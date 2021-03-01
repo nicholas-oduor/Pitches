@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(252, 84, 243);
+    text-align: center;
+    font-weight: bold;
+}
+h3, h2, h1{
+    color: hsl(113, 100%, 50%);
+    text-align: center;
+    font-weight: bold;
+}
