@@ -1,0 +1,50 @@
+
+ 
+{% extends 'base.html'%}
+{% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> 
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron" style="margin-top:0;">
+  <h2 class="text-center" >WELCOME TO PITCH APPLICATION</h2>
+  <p class="text-center">Nobody can make you feel inferior without your permission</p>
+</div> 
+
+<body >
+
+  <div class="container">  
+    <div class="d-flex justify-content-center row">
+      <div class="card-groups">
+        <div class="card border-info mb-3 col-md-4" style="max-width: 35rem;">          
+          <div class="card-body">
+            <h5 class="card-title">Production Pitch</h5>
+            <p class="card-text">The efficiency of most workers is beyond the control of the management and depends more than has been supposed upon the willingness of men to do their best..”</p>
+            <button type="button" class="btn btn-outline-primary"><a href="../pitch/">Enter a New Pitch</a></button><br><br>
+            <button type="button" class="btn btn-outline-primary"><a href="/categories/Product">Read More</a></button>
+          </div>
+        </div>
+
+        <div class="card border-info mb-3 col-md-4" style="max-width: 35rem;">         
+          <div class="card-body">
+            <h5 class="card-title" >Adverting Pitch</h5>
+            <p class="card-text">“Doing business without advertising is like winking at a girl in the dark”</p> <br>
+            <button type="button" class="btn btn-outline-primary"><a href="../pitch/">Enter a New Pitch</a></button><br><br>
+            <button type="button" class="btn btn-outline-primary"><a href="/categories/Adverts">Read More</a></button>
+          </div>
+        </div>
+
+        <div class="card border-info mb-3 col-md-4" style="max-width: 35rem;">          
+          <div class="card-body">
+            <h5 class="card-title" >Interview Pitch</h5>
+            <p class="card-text">Whether you think you can or you think you can't, you're righ</p>
+              <button type="button" class="btn btn-outline-primary"><a href="../pitch/">Enter a New Pitch</a></button><br><br>
+            <button type="button" class="btn btn-outline-primary"><a href="/categories/Interview">Read More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+  {% endblock%}
+
