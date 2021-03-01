@@ -38,3 +38,13 @@ def new_pitch():
         return redirect(url_for('main.index'))
 
     return render_template('pitch.html',form= form)
+
+@main.route('/categories/<cate>')
+def category(cate):
+    '''
+    function to return the pitches by category
+    '''
+    category = Pitches.get_pitches(cate)
+    # print(category)
+    title = f'{cate}'
+    return render_template('categories.html',title = title, category = category)
