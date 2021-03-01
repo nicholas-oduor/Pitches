@@ -22,3 +22,12 @@ class Pitches(db.Model):
     def save_pitch(self):
         db.session.add(self)
         db.session.commit()
+
+    @classmethod
+    def get_pitches(cls,cate):
+        pitch = Pitches.query.filter_by(category=cate).all()
+        return pitch
+
+    def __repr__(self):
+        return f"Pitches {self.pitch}','{self.date}')"
+  
