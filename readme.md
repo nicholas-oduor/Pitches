@@ -10,3 +10,6 @@ An application that allows users to use that one minute wisely. The users submit
 
 ## Demo
 Here is a working live demo : https://nick-pitches.herokuapp.com/
+
+## Mobile support
+The Pitches is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
